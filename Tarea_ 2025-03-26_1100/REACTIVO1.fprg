@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="REACTIVO1"/>
+        <attribute name="authors" value="meli_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-24 09:01:18 p. m."/>
+        <attribute name="created" value="bWVsaV87TEFQVE9QLUtOVjVLVExSOzIwMjUtMDMtMjM7MDk6NTY6MzUgcC4gbS47MzExMw=="/>
+        <attribute name="edited" value="bWVsaV87TEFQVE9QLUtOVjVLVExSOzIwMjUtMDMtMjQ7MDk6MDE6MTggcC4gbS47MzszMjE1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="CANTdonas, pZDONAS, DESCUENTO1, DESCUENTO2" type="Integer" array="False" size=""/>
+            <declare name="TTL, COMTL1, COMTL2" type="Integer" array="False" size=""/>
+            <assign variable="CANTdonas" expression="10"/>
+            <input variable="pZDONAS"/>
+            <assign variable="DESCUENTO1" expression="pZDONAS * 1"/>
+            <assign variable="DESCUENTO2" expression="pZDONAS *2"/>
+            <if expression="pZDONAS&gt;=29">
+                <then>
+                    <assign variable="TTL" expression="pZDONAS*CANTdonas-DESCUENTO1"/>
+                    <output expression="&quot;DESCUENTO DE&quot;" newline="True"/>
+                    <output expression="DESCUENTO1" newline="True"/>
+                    <output expression="&quot;TOTAL&quot;" newline="True"/>
+                    <output expression="TTL" newline="True"/>
+                </then>
+                <else>
+                    <if expression="pZDONAS&gt;=49">
+                        <then>
+                            <assign variable="COMTL2" expression="CANTdonas*pZDONAS"/>
+                            <output expression="&quot;DESCUENTO DE&quot;" newline="True"/>
+                            <output expression="DESCUENTO2" newline="True"/>
+                            <output expression="&quot;TOTAL ES&quot;" newline="True"/>
+                            <output expression="COMTL2" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="COMTL1" expression="CANTdonas*pZDONAS"/>
+                            <output expression="&quot;TOTAL ES&quot;" newline="True"/>
+                            <output expression="COMTL1" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

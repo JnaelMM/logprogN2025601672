@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="REACTIVO2"/>
+        <attribute name="authors" value="meli_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-24 10:22:29 p. m."/>
+        <attribute name="created" value="bWVsaV87TEFQVE9QLUtOVjVLVExSOzIwMjUtMDMtMjQ7MDk6MDU6NDYgcC4gbS47MzExMA=="/>
+        <attribute name="edited" value="bWVsaV87TEFQVE9QLUtOVjVLVExSOzIwMjUtMDMtMjQ7MTA6MjI6MjkgcC4gbS47MTszMjEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A&#209;OB" type="Integer" array="False" size=""/>
+            <input variable="A&#209;OB"/>
+            <if expression="A&#209;OB%400==0">
+                <then>
+                    <output expression="&quot;ES A&#209;O BISIESTO&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="A&#209;OB%100==0">
+                        <then>
+                            <output expression="&quot;NO ES A&#209;O BISIESTO&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="A&#209;OB%4==0">
+                                <then>
+                                    <output expression="&quot;ES O SERA A&#209;O BISIESTO&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;NO ES O NO SERA A&#209;O BISIESTO&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
