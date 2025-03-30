@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="TREA MODIFICAR"/>
+        <attribute name="authors" value="meli_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-29 06:29:56 p. m."/>
+        <attribute name="created" value="bWVsaV87TEFQVE9QLUtOVjVLVExSOzIwMjUtMDMtMjY7MTE6NTU6NTkgcC4gbS47MzExNA=="/>
+        <attribute name="edited" value="bWVsaV87TEFQVE9QLUtOVjVLVExSOzIwMjUtMDMtMjk7MDY6Mjk6NTYgcC4gbS47NDszMjMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ANIOCLIENTES" type="Integer" array="False" size=""/>
+            <input variable="ANIOCLIENTES"/>
+            <if expression="ANIOCLIENTES&lt;4">
+                <then>
+                    <output expression="&quot;ENTRA GRATIS&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="ANIOCLIENTES&gt;=4 AND ANIOCLIENTES&lt;=18">
+                        <then>
+                            <output expression="&quot;PAGAN 200&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="ANIOCLIENTES&gt;=18">
+                                <then>
+                                    <output expression="&quot;PAGAN 500&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
