@@ -4,14 +4,15 @@
         <attribute name="name" value="TREA MODIFICAR"/>
         <attribute name="authors" value="meli_"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-03-29 06:29:56 p. m."/>
+        <attribute name="saved" value="2025-03-29 08:17:56 p. m."/>
         <attribute name="created" value="bWVsaV87TEFQVE9QLUtOVjVLVExSOzIwMjUtMDMtMjY7MTE6NTU6NTkgcC4gbS47MzExNA=="/>
-        <attribute name="edited" value="bWVsaV87TEFQVE9QLUtOVjVLVExSOzIwMjUtMDMtMjk7MDY6Mjk6NTYgcC4gbS47NDszMjMw"/>
+        <attribute name="edited" value="bWVsaV87TEFQVE9QLUtOVjVLVExSOzIwMjUtMDMtMjk7MDg6MTc6NTYgcC4gbS47NTszMjMw"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="ANIOCLIENTES" type="Integer" array="False" size=""/>
+            <output expression="&quot; QUE EDAD TIENES?&quot;" newline="True"/>
             <input variable="ANIOCLIENTES"/>
             <if expression="ANIOCLIENTES&lt;4">
                 <then>
@@ -27,7 +28,9 @@
                                 <then>
                                     <output expression="&quot;PAGAN 500&quot;" newline="True"/>
                                 </then>
-                                <else/>
+                                <else>
+                                    <output expression="&quot;NO VALIDO&quot;" newline="True"/>
+                                </else>
                             </if>
                         </else>
                     </if>

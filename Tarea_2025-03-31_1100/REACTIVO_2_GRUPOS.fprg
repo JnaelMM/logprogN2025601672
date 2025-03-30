@@ -4,9 +4,9 @@
         <attribute name="name" value="TAREA NO TERMINADA"/>
         <attribute name="authors" value="meli_"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-03-29 06:36:41 p. m."/>
+        <attribute name="saved" value="2025-03-29 08:16:06 p. m."/>
         <attribute name="created" value="bWVsaV87TEFQVE9QLUtOVjVLVExSOzIwMjUtMDMtMjY7MTE6MDY6NDUgcC4gbS47MzEwNQ=="/>
-        <attribute name="edited" value="bWVsaV87TEFQVE9QLUtOVjVLVExSOzIwMjUtMDMtMjk7MDY6MzY6NDEgcC4gbS47NjszMjI0"/>
+        <attribute name="edited" value="bWVsaV87TEFQVE9QLUtOVjVLVExSOzIwMjUtMDMtMjk7MDg6MTY6MDYgcC4gbS47NzszMjI2"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -18,16 +18,18 @@
             <declare name="SEX, MUJ, HOMB" type="String" array="False" size=""/>
             <output expression="&quot;CUAL ES TU SEXO?&quot;" newline="True"/>
             <input variable="SEX"/>
-            <if expression="SEX==&quot;MUJ&quot; OR INICIAL&lt;=&quot;M&quot;">
+            <if expression="SEX==&quot;MUJ&quot; AND INICIAL&lt;=&quot;M&quot;">
                 <then>
                     <output expression="&quot;GRUPO A&quot;" newline="True"/>
                 </then>
                 <else>
-                    <if expression="SEX==&quot;HOMB&quot; OR INICIAL&gt;=&quot;N&quot;">
+                    <if expression="SEX==&quot;HOMB&quot; AND INICIAL&gt;=&quot;N&quot;">
                         <then>
                             <output expression="&quot;GRUPO B&quot;" newline="True"/>
                         </then>
-                        <else/>
+                        <else>
+                            <output expression="&quot; GRUPO A&quot;" newline="True"/>
+                        </else>
                     </if>
                 </else>
             </if>
