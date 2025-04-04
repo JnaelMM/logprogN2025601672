@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="TAREA PIZZERIA"/>
+        <attribute name="authors" value="meli_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-03 09:40:46 p. m."/>
+        <attribute name="created" value="bWVsaV87TEFQVE9QLUtOVjVLVExSOzIwMjUtMDQtMDM7MDU6MTI6MjMgcC4gbS47MzA5Nw=="/>
+        <attribute name="edited" value="bWVsaV87TEFQVE9QLUtOVjVLVExSOzIwMjUtMDQtMDM7MDk6NDA6NDYgcC4gbS47NTszMjE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="PIZZA, VEGETARIANA, NOVEG" type="Integer" array="False" size=""/>
+            <output expression="&quot;DESEA PIZZA VEGETARIANA O NO VEGETEARIANA?&quot;" newline="True"/>
+            <input variable="PIZZA"/>
+            <if expression="PIZZA=1">
+                <then>
+                    <output expression="&quot;ESCOGA UN INGREDIENTE, PIMIENTO  O TOFU&quot;" newline="True"/>
+                    <output expression="&quot;PIMIENTO 1 O TOFU 2&quot;" newline="True"/>
+                    <input variable="VEGETARIANA"/>
+                    <if expression="VEGETARIANA==1">
+                        <then>
+                            <output expression="&quot;TU PIZZA ES VEGETARIANA Y LLEVA, TOMATE, MOZZARELLA Y PIMINTO&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;TU PIZZA ES VEGETARIANA Y LLEVA, TOMATE, MOZZARELLA Y TOFU&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;ESCOGA, JAMON,SALMON O PEPERONI&quot;" newline="True"/>
+                    <output expression="&quot;INGRESA JAMON 5, PEPERONI 3 O  SALMON 10&quot;" newline="True"/>
+                    <input variable="NOVEG"/>
+                    <if expression="NOVEG=3">
+                        <then>
+                            <output expression="&quot;TU PIZZA NO ES VEGETARIANA Y LLEVA, TOMATE, MOZZARELLA Y PEPERONI&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="NOVEG=5">
+                                <then>
+                                    <output expression="&quot;TU PIZZA NO ES VEGETARIANA Y LLEVA, TOMATE, MOZZARELLA Y JAMON&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="NOVEG=10">
+                                        <then>
+                                            <output expression="&quot;TU PIZZA NO ES VEGETARIANA Y LLEVA, TOMATE, MOZZARELLA Y SALMON&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;ILOGICO&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
