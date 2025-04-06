@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2) SERIE DE FIBONACCI"/>
+        <attribute name="authors" value="meli_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-05 09:47:08 p. m."/>
+        <attribute name="created" value="bWVsaV87TEFQVE9QLUtOVjVLVExSOzIwMjUtMDQtMDU7MDg6NTM6MzQgcC4gbS47MzEwOQ=="/>
+        <attribute name="edited" value="bWVsaV87TEFQVE9QLUtOVjVLVExSOzIwMjUtMDQtMDU7MDk6NDc6MDggcC4gbS47NDszMjI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="m, i" type="Integer" array="False" size=""/>
+            <declare name="j, a, t" type="Integer" array="False" size=""/>
+            <assign variable="j" expression="0"/>
+            <assign variable="a" expression="1"/>
+            <assign variable="t" expression="1"/>
+            <output expression="&quot;NUMERO DE LA SERIE DE FIBONACCI&quot;" newline="False"/>
+            <input variable="m"/>
+            <for variable="i" start="1" end="m" direction="inc" step="1">
+                <assign variable="t" expression="j+a"/>
+                <assign variable="j" expression="a"/>
+                <assign variable="a" expression="t"/>
+                <output expression="t" newline="False"/>
+                <output expression="&quot;, &quot;" newline="False"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
